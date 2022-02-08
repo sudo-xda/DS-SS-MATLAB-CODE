@@ -1,9 +1,9 @@
 clc, clear all, close all;
-Data=[1 0 1 0 0 1 0 1 1 1 0 0];
+Data=[1 0 1 0 0 1 0 1 1 1 0 0]; %Message Sequence
 Data=rectpulse(Data,1);
 G=length(Data);
   
-sd1 =[1 1 1 1];            
+sd1 =[1 1 1 1];  %Initial Condition for flip flop          
  PN1=[];                       
  for j=1:G        
      PN1=[PN1 sd1(4)];
