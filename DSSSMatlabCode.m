@@ -19,8 +19,8 @@ sd1 =[1 1 1 1];  %Initial Condition for flip flop
 n=length(PN1);
 t=1:1:n;
 
-sp=xor(Data,PN1);
-sp=double(sp);
+sp=xor(Data,PN1);% XOR Data witn PN sequence for Spreading
+sp=double(sp);%converting the logical value to double value
 % comp_sig=sp;
 snr=20;
 comp_sig=awgn(sp,snr);
