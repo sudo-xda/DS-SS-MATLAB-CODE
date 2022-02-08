@@ -5,7 +5,7 @@ G=length(Data);
   
 sd1 =[1 1 1 1];  %Initial Condition for flip flop          
  PN1=[];                       
- for j=1:G        
+ for j=1:G        %Length Of PN Sequence
      PN1=[PN1 sd1(4)];
      if sd1(1)==sd1(2)
          temp1=0;
